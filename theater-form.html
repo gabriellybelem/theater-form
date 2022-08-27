@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Theater Form</title>
+  <link rel="stylesheet" href="theater-form.css">
+</head>
+<body>
+    <h1 id="title">Theater Form</h1>
+    <p id="description">Please answer de form</p>
+    <form id="survey-form"> 
+      <fieldset>
+      <label id="name-label">Name: <input id="name" type="text" placeholder="name" required> </label>
+      <label id="email-label">Email: <input id="email" type="email" placeholder="email" required> </label>
+      <label id="number-label">Your age: <input id="number" type="number" min="13" max="100" placeholder="age" required> </label>
+      </fieldset>
+<fieldset>
+<label>How often do you watch movies at the theater?
+      <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">0-10 in a year</option>
+        <option value="2">11-20 in a year</option>
+        <option value="3">21-30 in a year</option>
+        <option vlaue="4">more than 30 in a year</option>
+        <option value="5">I don't go to the theater</option>
+        </select>
+        </label>
+        </fieldset>
+       <fieldset>
+        <label>Do you use apps to keep track of the movies you watch?
+        <label> <input type="radio" name="yes-no" value="yes">Yes </label>
+        <label> <input type="radio" name="yes-no" value="no">No </label>
+      
+        </label>
+        </fieldset>
+       <fieldset>
+        <label>Which genres do you prefer?
+        <label> <input type="checkbox" value="horror">Horror </label>
+        <label> <input type="checkbox" value="drama">Drama </label>
+        <label> <input type="checkbox" value="comedy">Comedy </label>
+        <label> <input type="checkbox" value="romance">Romance </label>
+        <label> <input type="checkbox" value="fantasy">Fantasy </label>
+        <label> <input type="checkbox" value="sci-fi">Sci-Fi </label>
+        <label> <input type="checkbox" value="action">Action </label>
+        <label> <input type="checkbox" value="documentaries">Documentaries </label>
+        </label>
+        </fieldset>
+        <fieldset>
+        <label>What do you think should change in a movie theater?
+        <textarea name="comment" placeholder="Add your comment here"></textarea>
+        </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+      </body>
+  </html>
